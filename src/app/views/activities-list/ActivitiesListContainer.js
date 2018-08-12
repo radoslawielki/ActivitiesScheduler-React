@@ -1,8 +1,6 @@
 import { connect } from 'react-redux';
-import React from 'react'
-import { selectActivity } from '../../actions';
-import { ActivitiesList } from './../../components/activities-list/ActivitiesList'
-import { addActivity } from './../../actions';
+import { selectActivity, addActivity } from './ActivitiesListActions';
+import ActivitiesListComponent from './ActivitiesListComponent'
 
 const getActivities = (activitiesState) => {
     return activitiesState.activitiesList;
@@ -22,4 +20,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(ActivitiesList)
+)(ActivitiesListComponent)

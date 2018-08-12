@@ -1,7 +1,7 @@
 import React from 'react';
-import { ActivitiesItem } from './activities-item/ActivitiesItem';
+import ActivitiesItem from './activities-item';
 
-export class ActivitiesList extends React.Component {
+export default class ActivitiesListComponent extends React.Component {
     constructor({activities, selectActivity, addActivity}) {
         super(arguments);
     }
@@ -12,7 +12,6 @@ export class ActivitiesList extends React.Component {
         });
     }
     render() {
-        debugger;
         return (
             <div>
                 <button onClick={(e) => this.add(e)}> dodaj </button>

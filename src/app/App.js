@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import ActivitiesList from './containers/activities-list/ActivitiesList' 
+import ActivitiesList from './views/activities-list' 
 
 class App extends Component {
   render() {
