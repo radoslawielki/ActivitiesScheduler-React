@@ -1,4 +1,4 @@
 import { combineReducers } from 'redux'
-import activities from './views/activities-list/ActivitiesListReducer';
+import activities from './views/activities/ActivitiesReducer';
 
-export default combineReducers({activities: activities})
+export default combineReducers({activities})

@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/scss/bootstrap-grid.scss'
 
-import ActivitiesList from './views/activities-list' 
+import ActivitiesList from './views/activities/activities-list'
+import ActivitiesEditor from './views/activities/activities-editor'
 
 class App extends Component {
   render() {
@@ -12,6 +14,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
+        <ActivitiesEditor />
         <ActivitiesList />
       </div>
     );

@@ -1,4 +1,4 @@
-export default (state = {activitiesList: [], selected: {}}, action) => {
+export default (state = {activitiesList: [], selected: {id: '', name: ''}}, action) => {
     switch (action.type) {
         case 'ADD_ACTIVITY': {
             return {

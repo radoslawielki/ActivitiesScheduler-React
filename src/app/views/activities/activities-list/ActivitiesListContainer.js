@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { selectActivity, addActivity } from './ActivitiesListActions';
+import { addActivity } from './ActivitiesListActions';
 import ActivitiesListComponent from './ActivitiesListComponent'
 
 const getActivities = (activitiesState) => {
@@ -12,7 +12,6 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => {
     return ({
-    selectActivity: activty => dispatch(selectActivity(activty)), 
     addActivity: activity => dispatch(addActivity(activity))
 })
 }
