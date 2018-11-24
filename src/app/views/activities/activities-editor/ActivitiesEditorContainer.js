@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
-import { addActivity } from './ActivitiesEditorActions';
+import { addActivity, selectActivity, editActivity } from './ActivitiesEditorActions';
 import ActivitiesEditorComponent from './ActivitiesEditorComponent'
 
 const getSelectActivity = (activitiesState) => {
-    return activitiesState.selectedActivity;
+    return activitiesState.selected;
 }
 
 const mapStateToProps = state => ({
@@ -12,9 +12,11 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => {
     return ({
-    addActivity: activity => dispatch(addActivity(activity))
-})
-} 
+        addActivity: activity => dispatch(addActivity(activity)),
+        selectActivity: activty => dispatch(selectActivity(activty)),
+        editActivity: activty => dispatch(editActivity(activty))
+    })
+}
 
 export default connect(
     mapStateToProps,

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default class ActivitiesItem extends React.Component {
-    constructor({ selectedActivity }) {
+    constructor({ selectActivity }) {
         super(arguments);
     }
 
